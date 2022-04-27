@@ -40,7 +40,7 @@ console = Console()
 #console.print(table)
 
 
-titulo = 'Production ISP'
+titulo = 'Production'
 opened = 0
 while True:
     if(opened ==0):
