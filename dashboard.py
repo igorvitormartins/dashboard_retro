@@ -10,6 +10,11 @@ import time
 from random import randint
 import os
 from pygame import mixer
+import socket
+
+#funcao para obter nome do host
+host = socket.gethostname()
+
 os.system('cls')
 acumulo = ''
 
@@ -60,7 +65,7 @@ while True:
     layout["up"].size = 8
     layout["lower"].size = 20
     layout["up"].split(
-        Layout(Panel("Hello, [red]user!", title=titulo, subtitle="Rates and Results")),
+        Layout(Panel("Hello, [red]" + host + "!", title=titulo, subtitle="Rates and Results")),
         
     )
     layout["right"].split(
